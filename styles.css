@@ -69,6 +69,7 @@ button {
 button:hover {
   background-color: var(--dark-blue);
   transform: translateY(-2px);
+  color: white;
 }
 
 button:active {
@@ -125,7 +126,6 @@ select {
   color: var(--light-green);
 }
 
-/* اضافه کردن انیمیشن برای تعامل بهتر */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -139,7 +139,6 @@ select {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* استایل برای دکمه Clear */
 #clear {
   background-color: #e74c3c;
   border-color: #c0392b;
@@ -147,4 +146,99 @@ select {
 
 #clear:hover {
   background-color: #c0392b;
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    width: 85%;
+    padding: 20px;
+  }
+
+  button,
+  input,
+  select {
+    min-height: 28px;
+    padding: 5px 10px;
+  }
+
+  fieldset {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .input-container {
+    gap: 6px;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+
+  .controls span {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #entry-dropdown,
+  #add-entry {
+    width: 100%;
+  }
+
+  #calorie-counter > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  fieldset,
+  label,
+  button,
+  input,
+  select {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  fieldset {
+    padding: 8px;
+  }
+
+  input,
+  select {
+    padding: 4px 8px;
+  }
 }
