@@ -1,0 +1,150 @@
+:root {
+  --light-grey: #f8f9fa;
+  --dark-blue: #2c3e50;
+  --primary-color: #3498db;
+  --light-yellow: #f9ca24;
+  --dark-yellow: #f39c12;
+  --light-pink: #ff9ff3;
+  --dark-red: #e74c3c;
+  --light-green: #2ecc71;
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: var(--dark-blue);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  max-width: 680px;
+  background-color: var(--card-bg);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+.container,
+.output {
+  margin: 20px auto;
+}
+
+label,
+legend {
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border: 2px solid var(--dark-blue);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: var(--dark-blue);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button,
+input,
+select {
+  min-height: 32px;
+  color: var(--text-color);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+fieldset,
+label,
+button,
+input,
+select {
+  margin-bottom: 12px;
+}
+
+.output {
+  border: 2px solid var(--primary-color);
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.output span {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.surplus {
+  color: var(--dark-red);
+}
+
+.deficit {
+  color: var(--light-green);
+}
+
+/* اضافه کردن انیمیشن برای تعامل بهتر */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.output {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* استایل برای دکمه Clear */
+#clear {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+}
+
+#clear:hover {
+  background-color: #c0392b;
+}
