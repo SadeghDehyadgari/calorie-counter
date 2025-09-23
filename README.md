@@ -6,7 +6,7 @@ This project was built to practice and demonstrate JavaScript skills learned thr
 A web-based **Calorie Counter** built with vanilla JavaScript, HTML5, and CSS3.  
 Track your daily calorie intake and expenditure, manage meals, snacks, and exercises, and see if you are in a calorie surplus or deficit.
 
-🔗 **Live Demo:** *([add your live link here if hosted](https://sadeghdehyadgari.github.io/calorie-counter/))*
+🔗 **Live Demo:** *([Live link](https://sadeghdehyadgari.github.io/calorie-counter/))*
 
 ---
 
